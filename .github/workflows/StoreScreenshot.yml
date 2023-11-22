@@ -39,7 +39,7 @@ jobs:
           cd include-build; 
           ./gradlew roborazzi-core:test
           cd ..
-          ./gradlew recordRoborazziDebug recordRoborazziDesktop recordRoborazziJvm --stacktrace
+          ./gradlew recordRoborazziDebug --stacktrace
         env:
           GRADLE_ENTERPRISE_ACCESS_KEY: ${{ secrets.GE_TOKEN }}
 
