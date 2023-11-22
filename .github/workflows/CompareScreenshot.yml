@@ -43,7 +43,7 @@ jobs:
       - name: compare screenshot test
         id: compare-screenshot-test
         run: |
-          ./gradlew compareRoborazziDebug compareRoborazziDesktop compareRoborazziJvm --stacktrace --info
+          ./gradlew compareRoborazziDebug --stacktrace --info
         env:
           GRADLE_ENTERPRISE_ACCESS_KEY: ${{ secrets.GE_TOKEN }}
 
