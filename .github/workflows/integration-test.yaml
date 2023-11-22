@@ -28,6 +28,9 @@ jobs:
         run: |
           cd include-build
           ./gradlew roborazzi-gradle-plugin:check --stacktrace
+        env:
+          GRADLE_ENTERPRISE_ACCESS_KEY: ${{ secrets.GE_TOKEN }}
+
 
       - uses: actions/upload-artifact@v3
         if: ${{ always() }}

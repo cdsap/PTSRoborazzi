@@ -40,6 +40,9 @@ jobs:
           ./gradlew roborazzi-core:test
           cd ..
           ./gradlew recordRoborazziDebug recordRoborazziDesktop recordRoborazziJvm --stacktrace
+        env:
+          GRADLE_ENTERPRISE_ACCESS_KEY: ${{ secrets.GE_TOKEN }}
+
 
       - uses: actions/upload-artifact@v3
         if: ${{ always() }}
