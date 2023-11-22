@@ -54,7 +54,7 @@ dependencies {
   testImplementation project(":roborazzi")
   testImplementation project(":roborazzi-compose")
   testImplementation project(":roborazzi-junit-rule")
-
+  testRuntimeOnly('org.junit.vintage:junit-vintage-engine:5.9.0')
   def composeBom = platform('androidx.compose:compose-bom:2022.12.00')
   implementation composeBom
   implementation "androidx.compose.material3:material3:1.0.1"

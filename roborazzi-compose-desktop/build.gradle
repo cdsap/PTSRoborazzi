@@ -34,6 +34,7 @@ kotlin {
     commonTest {
       dependencies {
         implementation(compose.material3)
+        implementation("org.junit.vintage:junit-vintage-engine:5.9.0")
         implementation("org.jetbrains.kotlin:kotlin-test")
         implementation("org.jetbrains.kotlin:kotlin-test-junit")
       }
@@ -42,7 +43,8 @@ kotlin {
       dependencies {}
     }
     jvmTest {
-      dependencies {}
+      dependencies {
+      }
     }
   }
 }

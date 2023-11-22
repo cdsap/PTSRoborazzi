@@ -18,6 +18,14 @@ allprojects {
     }
   }
 
+  tasks.withType(Test).configureEach {
+    useJUnitPlatform()
+    predictiveSelection {
+      enabled = true
+    }
+  }
+
+
   plugins.withId('com.vanniktech.maven.publish') {
     project.group = "io.github.takahirom.roborazzi"
     mavenPublishing {

@@ -44,6 +44,7 @@ android {
 }
 
 dependencies {
+  testRuntimeOnly('org.junit.vintage:junit-vintage-engine:5.9.0')
   implementation project(':roborazzi')
   implementation 'androidx.test.ext:junit-ktx:1.1.5'
   compileOnly 'androidx.test.ext:junit-ktx:1.1.5'
