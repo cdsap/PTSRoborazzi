@@ -37,8 +37,8 @@ include ':roborazzi-painter'
 
 include ':sample-android'
 include ':sample-android-without-compose'
-include ':sample-compose-desktop-multiplatform'
-include ':sample-compose-desktop-jvm'
+//include ':sample-compose-desktop-multiplatform'
+//include ':sample-compose-desktop-jvm'
 
 includeBuild("include-build") {
   dependencySubstitution {
